@@ -22,7 +22,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .un_proyecto{
-        @extend %width100;
+        width: 100%;
+        height: auto;
         border-radius: 20px;
         background-color: v.$color-blanco;
         text-decoration: none;
@@ -39,7 +40,8 @@
             color: v.$color-blanco;
         }
         .fotoproyecto{
-            @extend %width100;
+            width: 100%;
+            height: auto;
             border-radius: 20px; 
         }
         .titulo_proy{

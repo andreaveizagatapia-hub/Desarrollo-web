@@ -1,5 +1,13 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
+%listas{
+    list-style: none;
+    @include m.flex (column, nowrap, start, stretch, 32px);
+    li{
+        border-bottom: 1px solid v.$color-borde;
+        padding-bottom: 20px;
+    }
+}
 .sobre_mi{
     display: grid;
     grid-template-columns: 1fr;
@@ -14,7 +22,8 @@
         @include m.flex(column, nowrap, start, stretch, 20px);
         figure{
             .fotosobremi{
-                @extend %width100;
+                width: 100%;
+                height: auto;
                 @include m.desktop{
                     width: 629px;
                     height: 944px; 
@@ -50,11 +59,7 @@
         @include m.flex(row, nowrap, start, stretch, 150px);
     }
     .lista_formacion{
-        list-style: none;
-        @include m.flex(column, nowrap, start, stretch, 32px);
-        li{
-            border-bottom: 1px solid v.$color-borde;
-        }
+        @extend %listas;
     }
 }
 .experiencia{
@@ -65,12 +70,7 @@
         @include m.flex(row, nowrap, start, stretch, 150px);
     }
     .lista_experiencia{
-        list-style: none;
-        @include m.flex(column, nowrap, start, stretch, 32px);
-        li{
-            border-bottom: 1px solid v.$color-borde;
-            padding-bottom: 20px;
-        }
+        @extend %listas;
     }
 }
 .herramientas{

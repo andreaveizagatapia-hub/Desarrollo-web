@@ -29,7 +29,8 @@
         }
         li{
             text-align: center;
-            @extend %width100;
+            width: 100%;
+            height: auto;
             min-height: 220px;
             padding: 30px 20px;
             background-color: v.$color-blanco;

@@ -17,45 +17,45 @@ header {
   background-color: #FDFCFA;
 }
 
-.servicios .lista_serv li, .mis_proyectos .un_proyecto, .mis_proyectos .un_proyecto .fotoproyecto, .sobre_mi .presentacion figure .fotosobremi, .hero .fotohero .fotoinicio {
-  width: 100%;
-  height: auto;
-}
-
 body {
   font-family: "Karla", sans-serif;
 }
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Instrument Serif", serif;
 }
-body h1 {
+
+h1 {
   font-size: 3rem;
   font-weight: 400;
 }
 @media (min-width: 1024px) {
-  body h1 {
+  h1 {
     font-size: 4rem;
   }
 }
-body h2 {
+
+h2 {
   font-size: 2.25rem;
   font-weight: 400;
 }
 @media (min-width: 1024px) {
-  body h2 {
+  h2 {
     font-size: 2.5rem;
   }
 }
-body h3 {
+
+h3 {
   font-size: 1.75rem;
   font-weight: 400;
 }
-body p {
+
+p {
   font-size: 1rem;
   font-weight: 400;
 }
@@ -190,6 +190,10 @@ footer .footernav .rss li a .logo_ws {
   grid-area: fotohero;
   width: 100%;
 }
+.hero .fotohero .fotoinicio {
+  width: 100%;
+  height: auto;
+}
 @media (min-width: 1024px) {
   .hero {
     padding: 100px 120px 64px;
@@ -261,6 +265,20 @@ footer .footernav .rss li a .logo_ws {
   }
 }
 
+.experiencia .lista_experiencia, .formacion .lista_formacion {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: stretch;
+  gap: 32px;
+}
+.experiencia .lista_experiencia li, .formacion .lista_formacion li {
+  border-bottom: 1px solid #6E6E6E;
+  padding-bottom: 20px;
+}
+
 .sobre_mi {
   display: grid;
   grid-template-columns: 1fr;
@@ -281,6 +299,10 @@ footer .footernav .rss li a .logo_ws {
   justify-content: start;
   align-items: stretch;
   gap: 20px;
+}
+.sobre_mi .presentacion figure .fotosobremi {
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 1024px) {
   .sobre_mi .presentacion figure .fotosobremi {
@@ -342,19 +364,6 @@ footer .footernav .rss li a .logo_ws {
     gap: 150px;
   }
 }
-.formacion .lista_formacion {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: start;
-  align-items: stretch;
-  gap: 32px;
-}
-.formacion .lista_formacion li {
-  border-bottom: 1px solid #6E6E6E;
-}
-
 .experiencia {
   margin: 64px 20px;
   display: flex;
@@ -375,20 +384,6 @@ footer .footernav .rss li a .logo_ws {
     gap: 150px;
   }
 }
-.experiencia .lista_experiencia {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: start;
-  align-items: stretch;
-  gap: 32px;
-}
-.experiencia .lista_experiencia li {
-  border-bottom: 1px solid #6E6E6E;
-  padding-bottom: 20px;
-}
-
 .herramientas {
   margin: 64px 20px;
 }
@@ -464,6 +459,8 @@ footer .footernav .rss li a .logo_ws {
   }
 }
 .mis_proyectos .un_proyecto {
+  width: 100%;
+  height: auto;
   border-radius: 20px;
   background-color: #FDFCFA;
   text-decoration: none;
@@ -481,6 +478,8 @@ footer .footernav .rss li a .logo_ws {
   color: #FDFCFA;
 }
 .mis_proyectos .un_proyecto .fotoproyecto {
+  width: 100%;
+  height: auto;
   border-radius: 20px;
 }
 .mis_proyectos .un_proyecto .titulo_proy {
@@ -532,6 +531,8 @@ footer .footernav .rss li a .logo_ws {
 }
 .servicios .lista_serv li {
   text-align: center;
+  width: 100%;
+  height: auto;
   min-height: 220px;
   padding: 30px 20px;
   background-color: #FDFCFA;
