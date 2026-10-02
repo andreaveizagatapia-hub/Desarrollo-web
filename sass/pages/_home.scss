@@ -41,6 +41,9 @@
             height: auto;
         }
     }
+    @include m.tablet{
+        padding: 64px 48px;
+    }
     @include m.desktop{
         padding: 100px 120px 64px;
         grid-template-columns: repeat(2, 1fr);

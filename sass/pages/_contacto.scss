@@ -51,6 +51,12 @@
             div{
                 width: 100%;
             }
+             @include m.tablet{
+                flex-direction: row;
+                div{
+                    width: 50%;
+                }
+             }
             @include m.desktop{
                 flex-direction: row;
                 gap: 20px;

@@ -34,6 +34,11 @@ h1 {
   font-size: 3rem;
   font-weight: 400;
 }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
 @media (min-width: 1024px) {
   h1 {
     font-size: 4rem;
@@ -182,6 +187,11 @@ footer .footernav .rss li a .logo_ws {
 .hero .fotohero .fotoinicio {
   width: 100%;
   height: auto;
+}
+@media (min-width: 768px) {
+  .hero {
+    padding: 64px 48px;
+  }
 }
 @media (min-width: 1024px) {
   .hero {
@@ -400,6 +410,11 @@ footer .footernav .rss li a .logo_ws {
   align-items: center;
   gap: 0px;
 }
+@media (min-width: 768px) {
+  .herramientas .lista_herramientas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (min-width: 1024px) {
   .herramientas .lista_herramientas {
     margin-top: 64px;
@@ -428,17 +443,18 @@ footer .footernav .rss li a .logo_ws {
 .proyectos .texto_proyectos {
   max-width: 600px;
 }
-@media (min-width: 1024px) {
-  .proyectos .texto_proyectos {
-    max-width: 600px;
-  }
-}
 
 .mis_proyectos {
   margin: 32px 20px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+@media (min-width: 768px) {
+  .mis_proyectos {
+    margin: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 1024px) {
   .mis_proyectos {
@@ -624,6 +640,14 @@ footer .footernav .rss li a .logo_ws {
 }
 .contacto .formulario .fila_form div {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .contacto .formulario .fila_form {
+    flex-direction: row;
+  }
+  .contacto .formulario .fila_form div {
+    width: 50%;
+  }
 }
 @media (min-width: 1024px) {
   .contacto .formulario .fila_form {

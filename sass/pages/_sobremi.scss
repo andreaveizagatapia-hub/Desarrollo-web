@@ -91,6 +91,9 @@
             height: 70px;
             @include m.flex(row, nowrap, center, center, 0px);
         }
+            @include m.tablet{
+                grid-template-columns: repeat(3, 1fr);
+            }
             @include m.desktop{
                 margin-top: 64px;
                 grid-template-columns: repeat(4, 1fr);

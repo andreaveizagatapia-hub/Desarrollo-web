@@ -7,9 +7,6 @@
     }
     .texto_proyectos{
         max-width: 600px;
-        @include m.desktop{
-            max-width: 600px;
-        }
     }
 }
 .mis_proyectos{
@@ -17,6 +14,10 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    @include m.tablet{
+        margin: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
     @include m.desktop{
         margin: 64px;
         grid-template-columns: repeat(2, 1fr);
