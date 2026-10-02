@@ -86,14 +86,6 @@ header .nav-link {
 header .nav-link:hover, header .nav-link:focus, header .nav-link:active {
   color: #6F2F3F;
 }
-@media (min-width: 1024px) {
-  header {
-    padding: 1px;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 0px;
-  }
-}
 header nav ul li {
   list-style: none;
 }
@@ -116,8 +108,6 @@ footer {
 footer .footernav .rss {
   display: flex;
   gap: 15px;
-  padding: 0px;
-  margin: 0px;
 }
 footer .footernav .rss li {
   list-style: none;
@@ -135,7 +125,6 @@ footer .footernav .rss li a .logo_ws {
 }
 @media (min-width: 1024px) {
   footer {
-    padding: 1px;
     height: 100px;
     flex-direction: row;
     justify-content: space-between;
@@ -306,8 +295,7 @@ footer .footernav .rss li a .logo_ws {
 }
 @media (min-width: 1024px) {
   .sobre_mi .presentacion figure .fotosobremi {
-    width: 629px;
-    height: 944px;
+    max-width: 629px;
   }
 }
 .sobre_mi .informacion {
@@ -438,11 +426,11 @@ footer .footernav .rss li a .logo_ws {
   }
 }
 .proyectos .texto_proyectos {
-  padding-right: 0px;
+  max-width: 600px;
 }
 @media (min-width: 1024px) {
   .proyectos .texto_proyectos {
-    padding-right: 600px;
+    max-width: 600px;
   }
 }
 
@@ -488,12 +476,12 @@ footer .footernav .rss li a .logo_ws {
 
 .titulo_serv {
   margin: 40px 20px;
-  padding-right: 0px;
+  max-width: 600px;
 }
 @media (min-width: 1024px) {
   .titulo_serv {
     margin: 64px;
-    padding-right: 700px;
+    max-width: 600px;
   }
 }
 
@@ -546,8 +534,7 @@ footer .footernav .rss li a .logo_ws {
     padding: 30px;
   }
 }
-
-.icono-servicio {
+.servicios .lista_serv .icono-servicio {
   font-size: 2rem;
   margin-bottom: 15px;
 }

@@ -8,7 +8,7 @@
     .texto_proyectos{
         max-width: 600px;
         @include m.desktop{
-            padding-right: 600px;
+            max-width: 600px;
         }
     }
 }

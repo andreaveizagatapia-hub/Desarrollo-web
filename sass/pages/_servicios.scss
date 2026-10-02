@@ -5,7 +5,7 @@
     max-width: 600px;
     @include m.desktop{
         margin: 64px;
-        padding-right: 700px;
+        max-width: 600px;
     }
 }
 .servicios{
