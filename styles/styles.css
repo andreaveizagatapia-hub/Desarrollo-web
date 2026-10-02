@@ -320,7 +320,8 @@ footer .footernav .rss li a .logo_ws {
 }
 @media (min-width: 1024px) {
   .sobre_mi .informacion {
-    padding: 90px 200px 0px 0px;
+    padding: 90px 0px 0px 0px;
+    max-width: 450px;
     gap: 64px;
   }
 }

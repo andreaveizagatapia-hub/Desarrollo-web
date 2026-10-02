@@ -35,7 +35,8 @@
         margin: 0px;
         @include m.flex(column, nowrap, start, stretch, 40px);
         @include m.desktop{
-            padding: 90px 200px 0px 0px;
+            padding: 90px 0px 0px 0px;
+            max-width: 450px;
             gap: 64px;
         }
         ul{
