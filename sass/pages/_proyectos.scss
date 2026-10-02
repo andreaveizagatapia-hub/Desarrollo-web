@@ -6,7 +6,7 @@
         margin: 64px;
     }
     .texto_proyectos{
-        padding-right: 0px;
+        max-width: 600px;
         @include m.desktop{
             padding-right: 600px;
         }

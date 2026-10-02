@@ -8,8 +8,6 @@ footer{
         .rss{
             display: flex;
             gap: 15px;
-            padding: 0px;
-            margin: 0px;
             li{
                 list-style: none;
                 a{
@@ -30,7 +28,6 @@ footer{
         }
     }
     @include m.desktop{
-        padding: 1px;
         height: 100px;
         flex-direction: row;
         justify-content: space-between;

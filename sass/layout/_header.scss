@@ -27,12 +27,6 @@ header{
             color: v.$color-boton;
         }
     }
-    @include m.desktop{
-        padding: 1px;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 0px;
-    }
     nav{
         ul{
             li{

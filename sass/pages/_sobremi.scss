@@ -25,8 +25,7 @@
                 width: 100%;
                 height: auto;
                 @include m.desktop{
-                    width: 629px;
-                    height: 944px; 
+                    max-width: 629px; 
                 }
             }
         }

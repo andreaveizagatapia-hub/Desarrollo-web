@@ -1,8 +1,10 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
-body{
+
+body {
     font-family: v.$fuente-texto;
-    }
+}
+
 h1,
 h2,
 h3,
@@ -11,25 +13,31 @@ h5,
 h6 {
     font-family: v.$fuente-titulos;
 }
+
 h1 {
     font-size: 3rem;
     font-weight: 400;
-    @include m.desktop{
+
+    @include m.desktop {
         font-size: 4rem;
     }
 }
+
 h2 {
     font-size: 2.25rem;
     font-weight: 400;
-    @include m.desktop{
+
+    @include m.desktop {
         font-size: 2.5rem;
     }
 }
+
 h3 {
     font-size: 1.75rem;
     font-weight: 400;
 }
+
 p {
     font-size: 1rem;
     font-weight: 400;
-} 
+}

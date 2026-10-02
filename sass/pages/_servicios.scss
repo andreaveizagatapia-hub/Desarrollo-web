@@ -2,7 +2,7 @@
 @use "../utilities/mixins" as m;
 .titulo_serv{
     margin: 40px 20px;
-    padding-right: 0px;
+    max-width: 600px;
     @include m.desktop{
         margin: 64px;
         padding-right: 700px;
@@ -42,12 +42,12 @@
                 padding: 30px;
             }
         }
-    }
-}
-.icono-servicio{
+        .icono-servicio{
                 font-size: 2rem;
                 margin-bottom: 15px;
             }
+    }
+}
 .proceso{
     margin: 40px 20px;
     @include m.desktop{
