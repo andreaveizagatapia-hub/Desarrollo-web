@@ -425,6 +425,15 @@ footer .footernav .rss li a .logo_ws {
   }
 }
 
+.mis_podcast {
+  margin: 64px 20px;
+}
+@media (min-width: 1024px) {
+  .mis_podcast {
+    margin: 64px;
+  }
+}
+
 .proyectos {
   margin: 32px 20px;
 }

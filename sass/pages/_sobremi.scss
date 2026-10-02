@@ -99,3 +99,9 @@
             }
     }
 }
+.mis_podcast{
+    margin: 64px 20px;
+    @include m.desktop{
+        margin: 64px;
+    }
+}
